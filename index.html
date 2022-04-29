@@ -10,6 +10,76 @@
 </head>
 
 <body>
+    <div class="container-fluid">
+        <h1>HANGMAN</h1>
+        <h2>VANILLA JAVASCRIPT HANGMAN GAME</h2>
+        <h3>Use the alphabet below to guess the word, or click hint to get a clue.</h3>
+        <div class="grid-container">
+            <div class="grid-item">
+                <button data-key="a">a</button>
+                <button data-key="b">b</button>
+                <button data-key="c">c</button>
+                <button data-key="d">d</button>
+                <button data-key="e">e</button>
+                <button data-key="f">f</button>
+                <button data-key="g">g</button>
+                <button data-key="ğ">ğ</button>
+                <button data-key="h">h</button>
+                <button data-key="ı">ı</button>
+                <button data-key="i">i</button>
+                <button data-key="j">j</button>
+                <button data-key="k">k</button>
+                <button data-key="l">l</button>
+                <button data-key="m">m</button>
+                <button data-key="n">n</button>
+                <button data-key="o">o</button>
+                <button data-key="ö">ö</button>
+                <button data-key="p">p</button>
+                <button data-key="r">r</button>
+                <button data-key="s">s</button>
+                <button data-key="ş">ş</button>
+                <button data-key="t">t</button>
+                <button data-key="u">u</button>
+                <button data-key="ü">ü</button>
+                <button data-key="v">v</button>
+                <button data-key="y">y</button>
+                <button data-key="z">z</button>
+            </div>
+        </div>
+        <h4>The Chosen Category Is: <select name="" id="category-select">
+                <option value="şehir-option">Şehir</option>
+                <option value="ünlü-option">Ünlü</option>
+                <option value="hayvan-option">Hayvan</option>
+                <option value="bitki-option">Bitki</option>
+                <option value="ülke-option">Ülke</option>
+            </select></h4>
+        <div id="answer">
+            <span id="1">_</span>
+            <span id="2">_</span>
+            <span id="3">_</span>
+            <span id="4">_</span>
+            <span id="5">_</span>
+            <span id="6">_</span>
+            <span id="7">_</span>
+            <span id="8">_</span>
+            <span id="9">_</span>
+            <span id="10">_</span>
+
+        </div>
+        <h4>You have 10 lives</h4>
+    </div>
+    <form id="form" action="">
+        <input type="text" placeHolder="Yeni Kelime">
+        <select id="category">
+            <option value="Şehir" selected>Şehir</option>
+            <option value="Ünlü">Ünlü</option>
+            <option value="Hayvan">Hayvan</option>
+            <option value="Bitki">Bitki</option>
+            <option value="Ülke">Ülke</option>
+        </select>
+        <button type="submit">Ekle</button>
+    </form>
+    <!--Script Tags-->
     <script src="app.js"></script>
 </body>
 
